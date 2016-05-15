@@ -41,7 +41,7 @@ def init():
             chosen_size = config.game_sizes_small[parser.args.board]
         passSize = parser.args.board
     except:
-        print "Can't find board size: %s" % (parser.args.board)
+        print _("Can't find board size: %s") % (parser.args.board)
         __main__.exit()
 
     # Calculate width
